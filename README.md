@@ -1,4 +1,4 @@
-# Ttrend application
+# Ttrend application (m)
 
 
 This is a small applicaiton which contains main and test folders.  
