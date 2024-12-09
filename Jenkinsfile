@@ -7,9 +7,9 @@ pipeline {
     }
 
     stages {
-        stage('clone code') {
+        stage('build') {
             steps {
-                git branch: 'main', url: 'https://github.com/igorgroz/tweet-trend-new.git'
+                sh 'mvn clen deploy'
             }
         }
     }
