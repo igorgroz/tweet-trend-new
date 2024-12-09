@@ -5,8 +5,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.12</version> <!-- Updated version for Java 17 compatibility -->
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.7.12</version> <!-- Compatible with Java 17 -->
+        <relativePath/>
     </parent>
     <groupId>com.valaxy</groupId>
     <artifactId>demo-workshop</artifactId>
@@ -16,12 +16,12 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <java.version>17</java.version> <!-- Set to Java 17 -->
-        <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version> <!-- Compatible version -->
+        <java.version>17</java.version>
+        <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
     </properties>
 
     <dependencies>
-        <!-- Spring Boot Dependencies -->
+        <!-- Spring Boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -30,55 +30,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-<dependencies>
-    <!-- Spring Boot Dependencies -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-
-    <!-- GitHub API -->
-    <dependency>
-        <groupId>org.kohsuke</groupId>
-        <artifactId>github-api</artifactId>
-        <version>1.99</version>
-    </dependency>
-
-    <!-- Twitter API -->
-    <dependency>
-        <groupId>org.twitter4j</groupId>
-        <artifactId>twitter4j-core</artifactId>
-        <version>3.0.6</version>
-    </dependency>
-
-    <!-- JUnit 5 (JUnit Jupiter) -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-test</artifactId>
-        <scope>test</scope>
-    </dependency>
-
-    <!-- JUnit 4 Support -->
-    <dependency>
-        <groupId>org.junit.vintage</groupId>
-        <artifactId>junit-vintage-engine</artifactId>
-        <scope>test</scope>
-    </dependency>
-
-    <!-- Mockito for JUnit 5 -->
-    <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-junit-jupiter</artifactId>
-        <scope>test</scope>
-    </dependency>
-</dependencies>
-
-
 
         <!-- GitHub API -->
         <dependency>
@@ -112,6 +63,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-junit-jupiter</artifactId>
             <scope>test</scope>
@@ -120,7 +76,7 @@
 
     <build>
         <plugins>
-            <!-- Spring Boot Maven Plugin -->
+            <!-- Spring Boot Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -130,7 +86,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version> <!-- Latest compatible version -->
+                <version>3.10.1</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -141,14 +97,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M7</version> <!-- Updated version -->
+                <version>3.0.0-M7</version>
             </plugin>
 
             <!-- JaCoCo Maven Plugin -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.10</version> <!-- Updated version -->
+                <version>0.8.10</version>
                 <executions>
                     <execution>
                         <goals>
